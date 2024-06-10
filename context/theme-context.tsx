@@ -18,7 +18,7 @@ const ThemeContext = createContext<ThemeContextType | null>(null);
 export default function ThemeContextProvider({
   children,
 }: ThemeContextProviderProps) {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
 
   const toggleTheme = () => {
     if (theme === "light") {
@@ -41,6 +41,11 @@ export default function ThemeContextProvider({
       if (localTheme === "dark") {
         document.documentElement.classList.add("dark");
       }
+    } else {
+      // If there's no theme saved in local storage, default to dark mode
+      setTheme("dark");
+      window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
     }
   }, []);
 

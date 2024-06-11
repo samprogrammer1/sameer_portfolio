@@ -28,19 +28,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content="sameer, sameer ali , samprogrammer, software developer" />
         <meta name="google-site-verification" content={metadata.googleSiteVerification} />
-      </Head>
-      <body
-        className={`${nunito.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
-      >
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
 
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-8M18XZLS91`}
@@ -56,6 +44,20 @@ export default function RootLayout({
             });
           `}
         </Script>
+      </Head>
+      <body
+        className={`${nunito.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+      >
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+
+            <Toaster position="top-right" />
+            <ThemeSwitch />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
+        
       </body>
     </html>
   );

@@ -28,21 +28,6 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content="sameer, sameer ali , samprogrammer, software developer" />
         <meta name="google-site-verification" content={metadata.googleSiteVerification} />
-
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-8M18XZLS91`}
-        />
-        <script id="google-analytics" >
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-8M18XZLS91', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </script>
       </Head>
       <body
         className={`${nunito.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
@@ -56,7 +41,21 @@ export default function RootLayout({
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
-        
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-8M18XZLS91`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8M18XZLS91', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

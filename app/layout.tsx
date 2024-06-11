@@ -12,6 +12,7 @@ const nunito = Nunito({ subsets: ["latin"] });
 export const metadata = {
   title: "Sameer Ali - Software Engineer | Utthan IT Solution",
   description: "Sameer Ali is a skilled software engineer at Utthan IT Solution, specializing in web development, mobile applications, and more.",
+  googleSiteVerification: "17Xz9xFTbYcuQdDNt8VDQzQRrvt8movxDAXIbbp6P3Q",
 };
 
 export default function RootLayout({
@@ -25,6 +26,7 @@ export default function RootLayout({
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content="sameer, sameer ali , samprogrammer, software developer" />
+        <meta name="google-site-verification" content={metadata.googleSiteVerification} />
       </Head>
       <body
         className={`${nunito.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}

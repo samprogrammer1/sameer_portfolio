@@ -27,8 +27,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content="sameer, sameer ali , samprogrammer, software developer" />
         <meta name="google-site-verification" content={metadata.googleSiteVerification} />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8M18XZLS91"
-        ></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8M18XZLS91"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `

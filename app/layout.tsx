@@ -29,12 +29,11 @@ export default function RootLayout({
         <meta name="keywords" content="sameer, sameer ali , samprogrammer, software developer" />
         <meta name="google-site-verification" content={metadata.googleSiteVerification} />
 
-        <Script
+        <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-8M18XZLS91`}
-          strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <script id="google-analytics" >
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -43,7 +42,7 @@ export default function RootLayout({
               page_path: window.location.pathname,
             });
           `}
-        </Script>
+        </script>
       </Head>
       <body
         className={`${nunito.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}

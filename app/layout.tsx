@@ -33,6 +33,20 @@ export default function RootLayout({
         <link rel="canonical" href="https://yourportfolio.com" />
 
         {/* Structured Data for SEO */}
+        
+      </Head>
+      <body
+        className={`${nunito.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+      >
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+
+            <Toaster position="top-right" />
+            <ThemeSwitch />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
         <Script type="application/ld+json" id="structured-data">
           {`
             {
@@ -52,19 +66,6 @@ export default function RootLayout({
             }
           `}
         </Script>
-      </Head>
-      <body
-        className={`${nunito.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
-      >
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=G-8M18XZLS91`}

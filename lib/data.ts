@@ -117,7 +117,7 @@ export const projectsData = [
       "devicon:bootstrap"
     ],
     imageUrl: resonance,
-    urlLink: "https://resonance2k24.jietjodhpur.ac.in/",
+    urlLink: "https://resonancejiet.in/",
   },
   {
     title: "Utthan IT Solution",
@@ -133,46 +133,6 @@ export const projectsData = [
     ],
     imageUrl: utthanitsolution,
     urlLink: "https://utthanitsolutions.com/",
-  },
-  {
-    title: "Nivaran Complaint Register | Website For Government",
-    description:
-      'Developed the "Nivaran" website for government services using HTML, CSS, JavaScript, and Laravel. The platform enables users to file complaints, allows district officials to assign inspectors for verification, and facilitates resolution tracking by district heads, ensuring efficient and transparent problem-solving.',
-    tags: ["PHP", "Laravel", "JavaScript", "Bootstrap", "MySQL"],
-    icons: [
-      "logos:laravel",
-      "logos:php",
-      "logos:javascript",
-      "devicon:bootstrap",
-      "logos:mysql",
-    ],
-    imageUrl: nivranweb,
-    urlLink: 'https://nivaran.utthanitsolutions.com/'
-  },
-  {
-    title: "Nivaran Inspector Complaint Verification | App",
-    description:'Developed the "Inspector App" for complaint verification using React Native, streamlining the process of field inspections and providing seamless updates for complaint resolutions.',
-    tags: ["React"],
-    icons: ["logos:react"],
-    imageUrl: nivranapp,
-    // githubLink: "https://github.com/ben04rogers/breadth-first-search",
-    // demoLink: "A",
-  },
-  {
-    title: "Swatantra Dev Singh Portfolio | Webiste",
-    description:
-      'Developed the "Swatantra Dev Singh" fully dynamic portfolio website utilizing HTML, CSS, JavaScript, and Laravel, showcasing a comprehensive range of projects, skills, and achievements with seamless navigation and interactive design elements.',
-    tags: ["PHP", "Laravel", "JavaScript", "Bootstrap", "MySQL"],
-    icons: [
-      "logos:laravel",
-      "logos:php",
-      "logos:javascript",
-      "devicon:bootstrap",
-      "logos:mysql",
-    ],
-    imageUrl: swatantradev,
-    urlLink: "https://dave.utthanitsolutions.com/",
-    // demoLink: "https://www.youtube.com/watch?v=A6n6XDk4Unw&feature=youtu.be",
   },
   {
     title: "KTLink",
